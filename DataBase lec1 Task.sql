@@ -17,7 +17,7 @@ DROP COLUMN ADDRESS;
 /
 --alter table manger add column (city_address, street) 
 ALTER TABLE MANAGER 
-ADD(CITY_ADDRESS VARCHAR2(100),STREET VARCHAR2(255));
+ADD(CITY_ADDRESS VARCHAR2(100),STREET VARCHAR2(100));
 /
 --modify column name to full_name
 ALTER TABLE MANAGER 
