@@ -27,11 +27,8 @@ RENAME COLUMN NAME TO FULL_NAME;
 ALTER TABLE MANAGER READ ONLY;
 /
 --create table same as  Manger with name Owner just has colum id, name, birth_date
-CREATE TABLE Owner (
-    ID NUMBER PRIMARY KEY,
-    NAME VARCHAR2(100),
-    BIRTH_DATE DATE
-);
+CREATE TABLE OWNER 
+AS SELECT ID,NAME,BIRTH_DATE FROM MANAGER;
 /
 --rename manger table name to Master
 ALTER TABLE MANAGER RENAME TO MASTER;
